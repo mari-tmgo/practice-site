@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<!--
+  =====================================================================
+  PRACTICE WEBSITE
+  This is a practice copy with the same kind of layout and code as a
+  real hand-written ("hard coded") website. The person, foundations and
+  companies are all made up. Feel free to break things — that's the point!
+
+  HOW THE LANGUAGES WORK:
+  Every piece of text appears twice, once in English and once in German:
+      <span class="en">Hello</span><span class="de">Hallo</span>
+  The EN / DE buttons at the top decide which one is shown.
+  =====================================================================
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jordan Sample — Practice Site</title>
+  <meta name="description" content="Practice website for learning how to edit a hand-built site.">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="lang-en">
+
+  <div class="practice-banner">
+    <span class="en">🧪 Practice website — not a real person or organisation</span>
+    <span class="de">🧪 Übungswebsite — keine echte Person oder Organisation</span>
+  </div>
+
+  <!-- ================= TOP MENU ================= -->
+  <header class="site-header">
+    <a href="#home" class="brand">
+      <img src="images/logo.svg" alt="" width="40" height="40">
+      <span>Jordan Sample</span>
+    </a>
+    <nav class="menu">
+      <a href="#about"><span class="en">About</span><span class="de">Über mich</span></a>
+      <a href="#charity"><span class="en">Charity</span><span class="de">Wohltätigkeit</span></a>
+      <a href="#associations"><span class="en">Associations</span><span class="de">Partner</span></a>
+      <a href="#companies"><span class="en">Companies</span><span class="de">Unternehmen</span></a>
+      <a href="#contact"><span class="en">Contact</span><span class="de">Kontakt</span></a>
+    </nav>
+    <div class="lang-switch">
+      <button type="button" data-lang="en" class="active">EN</button>
+      <button type="button" data-lang="de">DE</button>
+    </div>
+  </header>
+
+  <!-- ================= HERO (top of page) ================= -->
+  <section id="home" class="hero">
+    <div class="hero-text">
+      <p class="eyebrow">
+        <span class="en">Together for a better tomorrow</span>
+        <span class="de">Gemeinsam für ein besseres Morgen</span>
+      </p>
+      <h1>Jordan Sample</h1>
+      <p class="roles">FOUNDER | CEO | ENTREPRENEUR</p>
+
+      <!-- The numbers are typed right here, so you can change them easily -->
+      <div class="stats">
+        <div class="stat">
+          <strong>12+</strong>
+          <span class="en">Charity projects</span><span class="de">Hilfsprojekte</span>
+        </div>
+        <div class="stat">
+          <strong>8+</strong>
+          <span class="en">Partner organisations</span><span class="de">Partnerorganisationen</span>
+        </div>
+        <div class="stat">
+          <strong>5+</strong>
+          <span class="en">Regions represented</span><span class="de">Vertretene Regionen</span>
+        </div>
+      </div>
+    </div>
+    <img class="hero-photo" src="images/photos/portrait.svg" alt="Placeholder portrait of Jordan Sample" width="420" height="500">
+  </section>
+
+  <!-- ================= 01 ABOUT ================= -->
+  <section id="about" class="section">
+    <p class="section-number">01 — <span class="en">Profile</span><span class="de">Profil</span></p>
+    <h2><span class="en">About</span><span class="de">Über mich</span></h2>
+    <div class="two-col">
+      <p class="lead">
+        <span class="en">A lifelong journey of combining technology, business and purpose to create meaningful impact in communities around the world.</span>
+        <span class="de">Ein lebenslanger Weg, Technologie, Wirtschaft und Sinn zu verbinden, um in Gemeinschaften weltweit etwas zu bewegen.</span>
+      </p>
+      <p>
+        <span class="en">Jordan started out as an engineer, spent fifteen years building businesses across Europe and Asia, and today splits their time between running companies and supporting causes close to home.</span>
+        <span class="de">Jordan begann als Ingenieur:in, baute fünfzehn Jahre lang Unternehmen in Europa und Asien auf und teilt die Zeit heute zwischen Unternehmensführung und Herzensprojekten.</span>
+      </p>
+    </div>
+  </section>
+
+  <!-- ================= 02 CHARITY ================= -->
+  <section id="charity" class="section section-tint">
+    <p class="section-number">02 — <span class="en">Giving back</span><span class="de">Etwas zurückgeben</span></p>
+    <h2><span class="en">Charity</span><span class="de">Wohltätigkeit</span></h2>
+    <p class="lead narrow">
+      <span class="en">Charitable work is a fundamental part of my mission. Supporting initiatives that help communities drives real change and reflects my personal and professional values.</span>
+      <span class="de">Wohltätige Arbeit ist ein zentraler Teil meiner Mission. Initiativen zu unterstützen, die Gemeinschaften helfen, bewirkt echte Veränderung und spiegelt meine Werte wider.</span>
+    </p>
+
+    <div class="photo-row">
+      <!-- PHOTO: copy from <figure> to </figure> to add another photo -->
+      <figure>
+        <img src="images/photos/photo-1.svg" alt="Placeholder: community outreach" width="400" height="300">
+        <figcaption><span class="en">Community outreach, Cebu</span><span class="de">Gemeindearbeit, Cebu</span></figcaption>
+      </figure>
+      <figure>
+        <img src="images/photos/photo-2.svg" alt="Placeholder: shared meal" width="400" height="300">
+        <figcaption><span class="en">Shared meal programme</span><span class="de">Gemeinsames Essensprogramm</span></figcaption>
+      </figure>
+      <figure>
+        <img src="images/photos/photo-3.svg" alt="Placeholder: learning activity" width="400" height="300">
+        <figcaption><span class="en">Learning activity</span><span class="de">Lernaktivität</span></figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ================= 03 SUPPORTED ASSOCIATIONS ================= -->
+  <section id="associations" class="section">
+    <p class="section-number">03 — <span class="en">Partnerships</span><span class="de">Partnerschaften</span></p>
+    <h2><span class="en">Supported associations</span><span class="de">Unterstützte Organisationen</span></h2>
+    <p class="lead narrow">
+      <span class="en">I am proud to support organisations whose missions align with my values.</span>
+      <span class="de">Ich bin stolz, Organisationen zu unterstützen, deren Ziele meinen Werten entsprechen.</span>
+    </p>
+
+    <div class="card-grid">
+
+      <!-- ===== FOUNDATION CARD: copy from here ===== -->
+      <a class="org-card" href="https://example.org" target="_blank" rel="noopener">
+        <img src="images/associations/bright-steps.svg" alt="Bright Steps Foundation logo" width="72" height="72">
+        <h3>Bright Steps Foundation</h3>
+        <span class="visit"><span class="en">Visit website</span><span class="de">Website besuchen</span> →</span>
+      </a>
+      <!-- ===== FOUNDATION CARD: to here ===== -->
+
+      <a class="org-card" href="https://example.org" target="_blank" rel="noopener">
+        <img src="images/associations/green-harbor.svg" alt="Green Harbor Trust logo" width="72" height="72">
+        <h3>Green Harbor Trust</h3>
+        <span class="visit"><span class="en">Visit website</span><span class="de">Website besuchen</span> →</span>
+      </a>
+
+      <a class="org-card" href="https://example.org" target="_blank" rel="noopener">
+        <img src="images/associations/open-table.svg" alt="Open Table Kitchen logo" width="72" height="72">
+        <h3>Open Table Kitchen</h3>
+        <span class="visit"><span class="en">Visit website</span><span class="de">Website besuchen</span> →</span>
+      </a>
+
+      <a class="org-card" href="https://example.org" target="_blank" rel="noopener">
+        <img src="images/associations/little-lights.svg" alt="Little Lights Learning Center logo" width="72" height="72">
+        <h3>Little Lights Learning Center</h3>
+        <span class="visit"><span class="en">Visit website</span><span class="de">Website besuchen</span> →</span>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- ================= 04 COMPANIES ================= -->
+  <section id="companies" class="section section-tint">
+    <p class="section-number">04 — <span class="en">Experience</span><span class="de">Erfahrung</span></p>
+    <h2><span class="en">Companies I worked for</span><span class="de">Unternehmen, für die ich gearbeitet habe</span></h2>
+
+    <div class="logo-row">
+      <!-- COMPANY: copy one <img> line to add a company -->
+      <img src="images/companies/northwind.svg" alt="Northwind Systems" width="180" height="64">
+      <img src="images/companies/bluepeak.svg" alt="Bluepeak Logistics" width="180" height="64">
+      <img src="images/companies/solace.svg" alt="Solace Health" width="180" height="64">
+      <img src="images/companies/ironleaf.svg" alt="Ironleaf Energy" width="180" height="64">
+    </div>
+  </section>
+
+  <!-- ================= 05 CONTACT ================= -->
+  <section id="contact" class="section">
+    <p class="section-number">05 — <span class="en">Get in touch</span><span class="de">Kontakt aufnehmen</span></p>
+    <h2><span class="en">Let me know your thoughts</span><span class="de">Ich freue mich auf Ihre Nachricht</span></h2>
+
+    <!-- Practice form: it doesn't send anything anywhere -->
+    <form class="contact-form" onsubmit="event.preventDefault(); this.classList.add('sent');">
+      <div class="form-row">
+        <label><span class="en">First name</span><span class="de">Vorname</span><input type="text" name="first"></label>
+        <label><span class="en">Last name</span><span class="de">Nachname</span><input type="text" name="last"></label>
+      </div>
+      <label><span class="en">Email</span><span class="de">E-Mail</span><input type="email" name="email"></label>
+      <label><span class="en">Message</span><span class="de">Nachricht</span><textarea name="message" rows="5"></textarea></label>
+      <button type="submit"><span class="en">Submit</span><span class="de">Senden</span> →</button>
+      <p class="thanks">
+        <span class="en">Thanks! (This is a practice form, so nothing was actually sent.)</span>
+        <span class="de">Danke! (Dies ist ein Übungsformular, es wurde nichts gesendet.)</span>
+      </p>
+    </form>
+  </section>
+
+  <footer class="site-footer">
+    <p>© Jordan Sample · <span class="en">Practice website</span><span class="de">Übungswebsite</span></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
